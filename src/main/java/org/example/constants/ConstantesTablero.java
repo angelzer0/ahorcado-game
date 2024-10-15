@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Map;
 
 public class ConstantesTablero {
-
     public static final List<String> ANIMALES = List.of("Elefante", "Tigre", "Jirafa", "León", "Hipopótamo");
     public static final Map<String, List<String>> PISTAS_ANIMALES = Map.of(
             "Elefante", List.of("Es el animal terrestre más grande.", "Tiene trompa.", "Es herbívoro.", "Se encuentra en África y Asia.", "Vive en manadas.", "Su memoria es excelente."),

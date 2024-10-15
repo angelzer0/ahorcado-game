@@ -11,8 +11,6 @@ public class Tablero {
    private List<String> palabras;
    private Map<String, List<String>> pistas;
 
-   private int contadorPistas = 6;
-
     public void palabrasPorCategoria() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Elige el número de la categoría que prefieres:\n- 1. Animales\n- 2. Frutas\n- 3. Países\n- 4. Colores");
@@ -48,13 +46,6 @@ public class Tablero {
 
     public List<String> obtenerPistas(String palabraAleatoria) {
         return pistas.getOrDefault(palabraAleatoria, List.of());
-    }
-
-    public void quitarPuntos() {
-        if (contadorPistas > 0) {
-            contadorPistas--;
-        }
-        System.out.println("Te quedan " + contadorPistas + " pistas");
     }
 
     public boolean esPalabraCorrecta(String palabraAleatoria, String palabraElegida) {
