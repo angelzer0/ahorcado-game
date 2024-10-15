@@ -8,10 +8,10 @@ import java.util.Scanner;
 
 public class Tablero {
 
-    List<String> palabras;
-    Map<String, List<String>> pistas;
+   private List<String> palabras;
+   private Map<String, List<String>> pistas;
 
-    int contadorPistas = 6;
+   private int contadorPistas = 6;
 
     public void palabrasPorCategoria() {
         Scanner sc = new Scanner(System.in);
